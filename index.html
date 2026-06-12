@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1><b>Image Gallery</b></h1>
+
+    <div class="filters">
+        <button class="active" onclick="filterImages('all', this)">All</button>
+        <button onclick="filterImages('nature', this)">Nature</button>
+        <button onclick="filterImages('travel', this)">Travel</button>
+        <button onclick="filterImages('food', this)">Food</button>
+        <button onclick="filterImages('city', this)">City</button>
+    </div>
+
+    <div class="gallery">
+
+        <!-- Nature -->
+        <img src="images/nature1.jpg" class="nature" onclick="openLightbox(this)">
+        <img src="images/nature2.jpg" class="nature" onclick="openLightbox(this)">
+        <img src="images/nature3.jpg" class="nature" onclick="openLightbox(this)">
+        <img src="images/nature4.webp" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature5.webp" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature6.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature7.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature8.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature9.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature10.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature11.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature11.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature13.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature14.jpg" class="nature" onclick="openLightbox(this)">
+	<img src="images/nature15.webp" class="nature" onclick="openLightbox(this)">
+
+
+        <!-- Travel -->
+        <img src="images/travel1.webp" class="travel" onclick="openLightbox(this)">
+        <img src="images/travel2.jpg" class="travel" onclick="openLightbox(this)">
+        <img src="images/travel3.jpeg" class="travel" onclick="openLightbox(this)">
+        <img src="images/travel4.webp" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel5.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel6.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel7.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel8.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel9.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel10.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel11.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel12.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel13.webp" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel14.jpg" class="travel" onclick="openLightbox(this)">
+	<img src="images/travel15.jpg" class="travel" onclick="openLightbox(this)">
+
+
+        <!-- Food -->
+        <img src="images/food1.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food2.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food3.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food4.webp" class="food" onclick="openLightbox(this)">
+	<img src="images/food5.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food6.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food7.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food8.jpg" class="food" onclick="openLightbox(this)">
+	<img src="images/food9.jpg" class="food" onclick="openLightbox(this)">
+        <img src="images/food10.webp" class="food" onclick="openLightbox(this)">
+        <img src="images/food11.jpeg" class="food" onclick="openLightbox(this)">
+        <img src="images/food12.jpg" class="food" onclick="openLightbox(this)">
+	<img src="images/food13.webp" class="food" onclick="openLightbox(this)">
+        <img src="images/food14.webp" class="food" onclick="openLightbox(this)">
+        <img src="images/food15.jpg" class="food" onclick="openLightbox(this)">
+        
+
+        <!-- City -->
+        <img src="images/city1.jpg" class="city" onclick="openLightbox(this)">
+        <img src="images/city2.jpg" class="city" onclick="openLightbox(this)">
+        <img src="images/city3.jpg" class="city" onclick="openLightbox(this)">
+        <img src="images/city4.jpg" class="city" onclick="openLightbox(this)">
+	<img src="images/city5.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city6.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city7.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city8.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city9.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city10.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city11.jpg" class="city" onclick="openLightbox(this)">
+	<img src="images/city12.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city13.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city14.webp" class="city" onclick="openLightbox(this)">
+	<img src="images/city15.webp" class="city" onclick="openLightbox(this)">
+
+
+    </div>
+
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+
+        <button class="prev" onclick="changeImage(-1)">❮</button>
+
+        <img id="lightbox-img">
+
+        <button class="next" onclick="changeImage(1)">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
